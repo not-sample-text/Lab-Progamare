@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1679177004 source:c:\users\user\desktop\projects\lab programare\cap. 3\39\main.c
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+
