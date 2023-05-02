@@ -16,8 +16,11 @@ typedef struct
 
 int main()
 {
-    info pers1 = {"Pop Ghorghe", "0712345678", {"Cluj", "Principala", 8, 14}};
-    printf("%s poate fi contactat la nr. de tel %s, si locuieste in %s, str. %s, bl. %d, ap. %d.",
-           pers1.nume, pers1.tel, pers1.adresa.oras, pers1.adresa.strada, pers1.adresa.numar_bloc, pers1.adresa.numar_apt);
+    info pers[5] = {"Pop Ghorghe", "0712345678", {"Cluj", "Principala", 8, 14}};
+    int i;
+    for(i = 0; i < 5; ++i){
+    printf("%s poate fi contactat la nr. de tel %s, si locuieste in %s, str. %s, bl. %d, ap. %d.\n\n",
+           pers[i].nume, pers[i].tel, pers[i].adresa.oras, pers[i].adresa.strada, pers[i].adresa.numar_bloc, pers[i].adresa.numar_apt);
+    }
     return 0;
 }
